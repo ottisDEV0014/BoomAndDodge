@@ -1,3 +1,5 @@
+event_inherited();
+
 state();
 
 /*sprite_dir = move_dir + 90;
