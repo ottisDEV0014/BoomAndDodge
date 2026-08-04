@@ -1,7 +1,7 @@
 //event_inherited();
 
 
-spd = 0.8;
+spd = 0.6;
 hspd = 0;
 vspd = 0;
 
