@@ -1,0 +1,2 @@
+global.point = 0;
+

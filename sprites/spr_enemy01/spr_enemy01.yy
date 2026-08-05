@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_enemy01",
   "bboxMode":0,
-  "bbox_bottom":26,
+  "bbox_bottom":25,
   "bbox_left":4,
   "bbox_right":27,
   "bbox_top":4,
