@@ -5,6 +5,8 @@ spd = 0.6;
 hspd = 0;
 vspd = 0;
 
+delay = 0;
+
 state = "walk";
 
 dest_x = x + random_range(-60,60);
@@ -53,11 +55,6 @@ function control_state(){
 		break;
 		
 		case"walk":
-		
-			dir = point_direction(x,y,dest_x,dest_y);
-			
-			hspd = lengthdir_x(spd,dir);
-			vspd = lengthdir_y(spd,dir);
 			
 			var dist = point_distance(x,y,dest_x,dest_y);
 			
@@ -65,12 +62,17 @@ function control_state(){
 				state = "idle"
 			}
 		
-		
+
 			var target = obj_player;
 		
 			if(instance_exists(target)){
+				dir = point_direction(x,y,dest_x,dest_y);
 				var line = collision_line(x,y,target.x,target.y,obj_wall,false,false);
 				var dist = point_distance(x,y,target.x,target.y);
+			
+			hspd = lengthdir_x(spd,dir);
+			vspd = lengthdir_y(spd,dir);
+			
 			
 				if(dist < dist_min and !line){
 					 state = "chase";
@@ -81,24 +83,64 @@ function control_state(){
 		
 		case"chase":
 		
+		delay +=1;
+		
 			var target = obj_player;
 			
 			 if(!instance_exists(target)){
 				 state = "idle";
 			 }
 			 
-			 dir = point_direction(x,y,target.x,target.y);
-			 
-			 var dist = point_distance(x,y,target.x,target.y);
-				
+			if(instance_exists(target)){
+				var line = collision_line(x,y,target.x,target.y,obj_wall,false,false);
+				var dist = point_distance(x,y,target.x,target.y);
+				dir = point_direction(x,y,target.x,target.y);
+			}
+			
 			hspd = lengthdir_x(spd,dir);
 			vspd = lengthdir_y(spd,dir);
 			
 			 if(dist > dist_max){
 				 state = "idle";
 			 }
+			 if(dist <= dist_min and delay >= 120){
+				 state = "atk"
+			 }
 		
 		break
+		
+		case"atk":
+		
+			delay = 0;
+		
+			var target = obj_player;
+			
+			if(!instance_exists(target)){
+				state = "idle";
+			}
+			 
+			if(instance_exists(target)){
+				var line = collision_line(x,y,target.x,target.y,obj_wall,false,false);
+				var dist = point_distance(x,y,target.x,target.y);
+				dir = point_direction(x,y,target.x,target.y);
+			}				 
+				
+			hspd = 0;
+			vspd = 0;
+			
+			var xx = x + lengthdir_x(14,dir);
+			var yy = y + lengthdir_y(14,dir);
+	
+			var shoot = instance_create_layer(xx,yy,"Shoot",obj_e01_atk);
+			shoot.direction = dir;
+	
+			state = "chase"
+	
+			if(dist > dist_min){
+				 state = "chase";
+			 }
+		
+		break;
 	}
 }
 
