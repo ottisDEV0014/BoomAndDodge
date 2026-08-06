@@ -35,6 +35,7 @@
     {"id":{"name":"obj_enemy_explosion","path":"objects/obj_enemy_explosion/obj_enemy_explosion.yy",},},
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},},
     {"id":{"name":"obj_lifebar","path":"objects/obj_lifebar/obj_lifebar.yy",},},
+    {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},},
     {"id":{"name":"obj_menu_exit","path":"objects/obj_menu_exit/obj_menu_exit.yy",},},
     {"id":{"name":"obj_menu_start","path":"objects/obj_menu_start/obj_menu_start.yy",},},
     {"id":{"name":"obj_mouse","path":"objects/obj_mouse/obj_mouse.yy",},},
@@ -65,8 +66,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
