@@ -3,8 +3,8 @@
   "%Name":"obj_explosion",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_e_01","path":"objects/obj_e_01/obj_e_01.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_par_e","path":"objects/obj_par_e/obj_par_e.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_explosion",
@@ -13,7 +13,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_explosion",
+    "path":"objects/obj_par_explosion/obj_par_explosion.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

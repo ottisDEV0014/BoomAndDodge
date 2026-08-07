@@ -25,6 +25,21 @@ if surface_exists(sombra_surface){
 		}
 	}
 	
+	if(instance_exists(obj_par_explosion)){
+		var num = instance_number(obj_par_explosion);
+		
+		for(var i = 0;i < num; i++){
+			var inst = instance_find(obj_par_explosion,i);
+			
+			//luz
+			draw_circle(inst.x,inst.y - 6,16 + irandom(1),false);
+	
+			//borda da luz
+			draw_set_alpha(.4);
+			draw_circle(inst.x,inst.y - 6,24 + irandom(1),false);
+		}
+	}
+	
 	//luz
 	draw_circle(obj_player.x,obj_player.y - 6,32 + irandom(1),false);
 	

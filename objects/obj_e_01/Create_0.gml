@@ -15,8 +15,8 @@ dest_y = y + random_range(-60,60);
 time_stop = 30;
 timer_stop = time_stop;
 
-dist_max = 200;
-dist_min = 100;
+dist_max = 300;
+dist_min = 200;
 
 dir = 0;
 
@@ -103,7 +103,7 @@ function control_state(){
 			 if(dist > dist_max){
 				 state = "idle";
 			 }
-			 if(dist <= dist_min and delay >= 120){
+			 if(dist <= dist_min and delay >= 40){
 				 state = "atk"
 			 }
 		

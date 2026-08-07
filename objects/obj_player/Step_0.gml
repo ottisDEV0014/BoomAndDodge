@@ -16,5 +16,5 @@ if(hspd = 0 and move_dir = 0){
 
 if(obj_lifebar.life == 0){
 	//alarm[0] = 30;
-	instance_destroy();
+	room_goto(rm_gameover);
 }

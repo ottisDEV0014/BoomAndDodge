@@ -7,6 +7,14 @@ spd = 1.4;
 
 sprite_dir = 0;
 
+dash = true;
+can_dash = true;
+dash_delay = 40;
+dash_dir = 0;
+dash_force = 4;
+dash_time = 0;
+dash_dist = 8;
+
 delay = 0;
 
 life = 0;
