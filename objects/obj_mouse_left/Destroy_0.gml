@@ -1,0 +1,1 @@
+instance_create_layer(obj_player.x,obj_player.y - 64,"Player",obj_mouse_right);

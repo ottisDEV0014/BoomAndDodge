@@ -103,7 +103,7 @@ function control_state(){
 			 if(dist > dist_max){
 				 state = "idle";
 			 }
-			 if(dist <= dist_min and delay >= 40){
+			 if(dist <= dist_min and delay >= 60){
 				 state = "atk"
 			 }
 		

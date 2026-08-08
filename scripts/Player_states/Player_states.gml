@@ -16,6 +16,7 @@ function player_state_walk(){
 	hspd = lengthdir_x(spd * keys,move_dir);
 	vspd = lengthdir_y(spd * keys,move_dir);
 	
+	
 	if(left_click and delay >= 30){
 		state = player_state_shoot;
 		delay = 0;

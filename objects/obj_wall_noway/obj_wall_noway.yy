@@ -37,5 +37,5 @@
     "path":"sprites/spr_white/spr_white.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
