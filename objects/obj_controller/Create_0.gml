@@ -1,2 +1,1 @@
-global.point = 0;
-
+e_num = 0;

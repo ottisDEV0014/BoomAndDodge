@@ -16,6 +16,7 @@ dash_time = 0;
 dash_dist = 8;
 
 delay = 0;
+end_delay = 0;
 
 life = 0;
 

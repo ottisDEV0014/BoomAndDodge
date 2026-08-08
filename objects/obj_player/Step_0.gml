@@ -4,6 +4,14 @@ state();
 
 life = obj_lifebar.life;
 
+if(room = rm_final2){
+	end_delay++;
+	
+	if(end_delay >= 120){
+		game_end();
+	}
+}
+
 /*sprite_dir = move_dir + 90;
 
 if(hspd = 0 and move_dir = 0){

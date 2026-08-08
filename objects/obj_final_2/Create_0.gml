@@ -1,0 +1,1 @@
+global.final2 = false;

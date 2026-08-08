@@ -1,8 +1,3 @@
-delay ++;
-
-if(delay >= 180){
-	alpha = true;
-}
 
 if(alpha = true){
 	image_alpha -= 0.1;
