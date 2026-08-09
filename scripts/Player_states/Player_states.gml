@@ -49,6 +49,8 @@ function player_state_dash(){
 	
 	dash_time++;
 	
+	audio_play_sound(snd_dodge,2,0);
+	
 	if(dash_time >= dash_dist){
 		dash_time = 0;
 		hspd = 0;
@@ -58,7 +60,7 @@ function player_state_dash(){
 	
 }
 
-function player_state_shoot(){
+function player_state_shoot(){	
 	var dir = point_direction(x,y,mouse_x,mouse_y)
 	
 	var xx = x + lengthdir_x(0,dir) * dir;
@@ -67,6 +69,7 @@ function player_state_shoot(){
 	var shoot = instance_create_layer(xx,yy,"Shoot",obj_bomb);
 	shoot.direction = dir;
 	
+	set_screenshake_on();
 	
 	state = player_state_walk
 	

@@ -1,0 +1,1 @@
+set_screenshake_off();
