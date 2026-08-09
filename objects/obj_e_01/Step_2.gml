@@ -1,4 +1,4 @@
-if(place_meeting(x+hspd,y,all)){
+/*if(place_meeting(x+hspd,y,all)){
 		while(!place_meeting(x+sign(hspd),y,all)){
 			x+=sign(hspd);
 		}
@@ -13,4 +13,4 @@ if(place_meeting(x+hspd,y,all)){
 		}
 		vspd = 0;
 		dest_y += random_range(-60,60);
-	}
+	}*/

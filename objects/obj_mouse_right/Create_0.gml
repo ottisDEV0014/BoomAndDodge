@@ -1,4 +1,3 @@
-delay = 0;
 alpha = false;
 
 x = obj_player.x;
