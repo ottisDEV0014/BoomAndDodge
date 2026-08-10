@@ -77,7 +77,7 @@
   "name":"rm_lvl6",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Objects/Rooms.yy",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
