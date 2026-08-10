@@ -49,7 +49,9 @@ function player_state_dash(){
 	
 	dash_time++;
 	
-	audio_play_sound(snd_dodge,2,0);
+	if(!audio_is_playing(snd_dodge)){
+		audio_play_sound(snd_dodge,2,0);
+	}
 	
 	if(dash_time >= dash_dist){
 		dash_time = 0;

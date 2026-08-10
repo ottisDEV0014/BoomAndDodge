@@ -101,7 +101,7 @@
   "name":"rm_choose",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Objects/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

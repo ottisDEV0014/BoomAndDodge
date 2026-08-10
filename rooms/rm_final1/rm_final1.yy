@@ -62,7 +62,7 @@
   "name":"rm_final1",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Objects/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
